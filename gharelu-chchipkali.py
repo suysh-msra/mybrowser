@@ -1,4 +1,4 @@
-###skeleton of code courtesy of samcodes
+###base code for browser ,courtesy samcodes
 '''import smtplib
 import speech_recognition as sr
 import pyttsx3
