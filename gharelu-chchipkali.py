@@ -6,7 +6,7 @@ import pyttsx3
 from email.message import EmailMessage
 
 '''
-###
+###to do : store login and password
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
