@@ -6,7 +6,7 @@ import pyttsx3
 from email.message import EmailMessage
 
 '''
-
+###
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
@@ -40,7 +40,7 @@ class mainWindow(QMainWindow):
         navbar.addAction(refresh_btn)
 
         home = QAction("H",self)
-        home.triggered.connect(self.navigate_youtube)
+        home.triggered.connect(self.navigate_youtube)####misleading function,actually takes you to home page
         navbar.addAction(home)
 
         self.url_bar = QLineEdit()
