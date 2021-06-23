@@ -11,6 +11,7 @@ import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import *
+import pyshorteners as ps
 
 
 class mainWindow(QMainWindow):
@@ -70,6 +71,11 @@ class mainWindow(QMainWindow):
 
     def update_url(self, r):
         self.url_bar.setText(r.toString())
+        
+    def url_shortener(self,url):
+        sh = ps.Shortener()
+        new_link = sh.tinyurl.short(url)
+        return self.new_link
 
         
 app = QApplication(sys.argv)
